@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'bootstrap/scss/bootstrap.scss';
+@import "bootstrap/scss/bootstrap.scss";
+
+* {
+  margin-top: 40px;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
 
 .searchmatch {
   font-weight: bold;

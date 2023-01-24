@@ -4,7 +4,7 @@ import { WikipediaService } from './wikipedia.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   pages = [];
@@ -14,6 +14,6 @@ export class AppComponent {
   onTerm(term: string) {
     this.wikipedia.search(term).subscribe((response: any) => {
       this.pages = response.query.search;
-    })
+    });
   }
 }
