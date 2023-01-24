@@ -1,31 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap');
 
+.container {
+  margin-top: 3rem;
+}
+
 .img-fluid {
-  width: 200px;
-  height: 200px;
+  width: 20rem;
+  height: 20rem;
   display: flex;
   align-items: center;
   margin: auto;
 }
 
 .form {
-  margin-top: 50px;
+  margin-top: 5rem;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 10rem;
+}
+
+.form-control {
+  font-size: 2rem;
+}
+
+.btn {
+  font-size: 2rem;
 }
 
 .h1-title {
   font-family: 'Roboto', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .input-group {
   text-align: center;
   margin: auto;
-  width: 500px;
-  margin-top: -15px;
+  width: 50rem;
+  margin-top: -1.5rem;
+}
+
+.table-bordered {
+  border-color: black;
 }
 
