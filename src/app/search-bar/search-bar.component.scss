@@ -1,55 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap');
-
-.container {
-  margin-top: 3rem;
-}
-
-.img-fluid {
-  width: 20rem;
-  height: 20rem;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@300&family=Roboto:ital,wght@0,300;1,100&display=swap");
 
 .form {
   margin-top: 5rem;
   align-items: center;
-  margin-bottom: 10rem;
-}
+  margin-bottom: 5rem;
 
-.form-control {
-  font-size: 2rem;
-}
+  &.input-group {
+    text-align: center;
+    margin: auto;
+    width: 50rem;
+    margin-top: -1.5rem;
+  }
 
-.btn {
-  font-size: 2rem;
-}
+  &.form-control {
+    font-size: 2rem;
+  }
 
-.h1-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  letter-spacing: 5px;
-  margin-top: 1.5rem;
+  &.btn {
+    font-size: 2rem;
+  }
 }
-
-.input-group {
-  text-align: center;
-  margin: auto;
-  width: 50rem;
-  margin-top: -1.5rem;
-}
-
-.table-bordered {
-  border-color: black;
-}
-
 
 @media only screen and (max-width: 37.5em) {
-  .input-group {
-    width: 40rem;
+  .form {
+    &.input-group {
+      width: 47rem;
+    }
   }
 }

@@ -1,0 +1,21 @@
+.header {
+  margin-top: 2rem;
+
+  &.img-fluid {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+  }
+
+  &.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 5px;
+    margin-top: 1.5rem;
+  }
+}

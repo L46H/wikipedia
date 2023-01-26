@@ -1,15 +1,22 @@
-.container {
-  display: flex;
-  padding: 2rem;
+.main {
   font-size: 2rem;
+  width: 90%;
+  margin: auto;
+
+  &.table {
+    margin-bottom: 7rem;
+    align-items: center;
+  }
+
 }
 
 
 @media only screen and (max-width: 37.5em) {
-  .container {
-    width: 19rem;
-    padding: 1rem;
-    text-align: center;
+  .main {
+    //font-size: 1.7rem;
+    align-items: center;
     justify-content: center;
+    width: 100%;
   }
+
 }
