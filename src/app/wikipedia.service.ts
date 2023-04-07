@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
-interface WikipediaResponse {
+export interface WikipediaResponse {
   query: {
     search: {
       title: string;
@@ -31,6 +31,6 @@ export class WikipediaService {
           origin: '*',
         },
       })
-      .pipe(map(x => x?.query?.search));
+      .pipe(map(val => val.query.search));
   }
 }
