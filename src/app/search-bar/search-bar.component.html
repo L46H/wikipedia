@@ -1,15 +1,14 @@
-<form class="form" (submit)="onFormSubmit($event)">
+<form class="form">
   <div class="form input-group mb-3">
     <input
-      (input)="term = $any($event).target.value"
+      #searchInput
+      (input)="term = searchInput.value"
       type="text"
       class="form form-control"
       placeholder="enter a phrase"
-      aria-label="Recipient's username"
-      aria-describedby="button-addon2"
     />
     <button
-      (click)="onFormSubmit($event)"
+      (click)="onFormSubmit()"
       class="form btn btn-outline-secondary"
       type="button"
       id="button-addon2"

@@ -1,6 +1,5 @@
 <main class="main">
-  <table class="main table
-  table-bordered is-striped table-hover border-dark">
+  <table class="main table table-bordered is-striped table-hover border-dark">
     <thead>
       <tr>
         <th>Title</th>
@@ -11,7 +10,10 @@
     <tbody class="tbody">
       <tr *ngFor="let page of pages">
         <td>
-          <a target="_blank" [href]=" 'https://en.wikipedia.org?curid=' + page.pageid ">
+          <a
+            target="_blank"
+            [href]="'https://en.wikipedia.org?curid=' + page.pageid"
+          >
             {{ page.title }}
           </a>
         </td>

@@ -1,11 +1,7 @@
 import { Component } from '@angular/core';
 import { WikipediaService } from './wikipedia.service';
+import { PagesForm } from './interface/pages-form.interface';
 
-interface PagesForm {
-  title: string;
-  snippet: string;
-  pageid: number;
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,10 +10,10 @@ interface PagesForm {
 export class AppComponent {
   pages: PagesForm[] = [];
 
-  constructor(private wikipedia: WikipediaService) {}
+  constructor(private wikipedia: WikipediaService) { }
 
   onTerm(term: string) {
-    this.wikipedia.search(term).subscribe((pages) => {
+    this.wikipedia.search(term).subscribe(pages => {
       this.pages = pages;
     });
   }

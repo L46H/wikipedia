@@ -7,15 +7,14 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
   @Output() submitted = new EventEmitter<string>();
-  term = '';
+  term: string = '';
 
   constructor() { }
 
   ngOnInit(): void {}
 
 
-  onFormSubmit(event: any) {
-    event.preventDefault();
+  onFormSubmit() {
     this.submitted.emit(this.term);
   }
 }
